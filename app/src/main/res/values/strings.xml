@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Datera</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_explore_string">Explore</string>
+    <string name="navigation_matches_string">Matches</string>
+    <string name="navigation_chat_string">Chat</string>
+    <string name="navigation_profile_string">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_request_string">Send Friend Request</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="profile_name_string">%1$s %2$s</string>
+    <string name="user_name_string">User Name</string>
+    <string name="last_message_string">Last Message</string>
+</resources>

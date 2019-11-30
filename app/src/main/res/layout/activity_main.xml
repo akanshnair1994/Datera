@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toobar" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_margin="16dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@drawable/bottom_navigation"
+        app:itemRippleColor="@android:color/holo_blue_light"
+        app:itemTextColor="@android:color/primary_text_light"
+        android:background="@android:color/background_light"
+        app:labelVisibilityMode="labeled"
+        android:paddingTop="8dp"
+        app:itemTextAppearanceActive="@style/TextAppearance.AppCompat.Menu"
+        app:itemTextAppearanceInactive="@style/TextAppearance.AppCompat.Small"
+        android:paddingBottom="8dp"
+        app:itemHorizontalTranslationEnabled="true"
+        app:menu="@menu/navigation_menu"
+        android:theme="@style/BottomNavigationViewStyle"/>
+
+</RelativeLayout>
